@@ -25,20 +25,6 @@
 	font-display: swap
 }
 
-@font-face {
-	font-family: Airmoji_Standalone;
-	src: url("../fonts/airmojix-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal
-}
-
-@font-face {
-	font-family: Airglyphs;
-	src: url("../fonts/airglyphs.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal
-}
-
 * {
 	box-sizing: border-box
 }
@@ -107,7 +93,7 @@ body {
 }
 
 .tipoPropriedadeDiv {
-	margin-top: 10px;
+	margin-top: 2px;
 	margin-bottom: 2px;
 }
 
@@ -651,7 +637,7 @@ p {
 }
 
 .divFooter {
-	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;;
+	font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
 
 @media (min-width: 744px) {
@@ -757,7 +743,6 @@ p {
 		padding-left: 12px !important;
 		padding-right: 12px !important;
 	}
-
 	.secao:not(:last-child) {
 		padding-bottom: 0px !important;
 		margin-bottom: 0px !important;
@@ -933,4 +918,60 @@ p {
 	.messageCreditos {
 		margin-right: 19px !important;
 	}
+}
+
+.divAvaliacao {
+	margin-right: 10px !important;
+	margin-top: 10px !important;
+	-webkit-animation-duration: 0.3s !important;
+	animation-duration: 0.3s !important;
+	-webkit-animation-name: keyframe_18jn58a !important;
+	animation-name: keyframe_18jn58a !important;
+	-webkit-animation-timing-function: ease-in-out !important;
+	animation-timing-function: ease-in-out !important;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.divAvaliacao {
+		-webkit-animation: none !important;
+		animation: none !important;
+	}
+}
+
+.spanMessageAvaliacao {
+	-webkit-box-align: center !important;
+	-ms-flex-align: center !important;
+	-webkit-align-items: center !important;
+	align-items: center !important;
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	font-size: 14px !important;
+	line-height: 18px !important;
+}
+
+.spanStarSvg {
+	-webkit-box-align: center !important;
+	-ms-flex-align: center !important;
+	-webkit-align-items: center !important;
+	align-items: center !important;
+	display: -webkit-box !important;
+	display: -moz-box !important;
+	display: -ms-flexbox !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	margin-right: 4px !important;
+	color: #FF385C !important;
+}
+
+.spanAvaliacao {
+	color: #222222 !important;
+}
+
+.spanTotalAvaliacoes {
+	color: #717171 !important;
 }
