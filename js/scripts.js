@@ -61,7 +61,14 @@ request.onload = function () {
 
 			// Criação e configuração do elemento p e inserção do mesmo na tipoPropriedadeDiv
 			const tipoPropriedade = document.createElement('p');
-			tipoPropriedade.textContent = room.property_type;
+			const numeroCamas = (parseInt(Math.floor(Math.random() * 6)) + 1);
+			let camas = '';
+			if (numeroCamas == 1) {
+				camas = '1 cama';
+			} else {
+				camas = numeroCamas.toString() + ' camas';
+			}
+			tipoPropriedade.textContent = room.property_type + ' · ' + camas;
 			tipoPropriedadeDiv.appendChild(tipoPropriedade);
 			tipoPropriedadeDiv.setAttribute('class', 'tipoPropriedadeDiv');
 
